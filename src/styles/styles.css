@@ -1,0 +1,237 @@
+#app {
+  font:14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #4d4d4d;
+  min-width: 550px;
+  min-height: 850px;
+  margin: 0 auto;
+  width: 100vw;
+	height: 100vh;
+}
+
+a.active {
+  color: orange;
+}
+
+a {
+  background-color: #ff5a5f;
+}
+
+nav {
+  padding-top: 20px;
+}
+
+.main-button {
+	position: absolute;
+	width: 90px;
+	height: 90px;
+	border-radius: 100%;
+	background-color: #68AEF0;
+	cursor: pointer;
+	display: flex;
+	justify-content : center;
+	align-items: center;
+	color: #ffffff;
+	font-weight: lighter;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.child-button {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	background-color: white;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px;
+	color: #8898A5;
+}
+
+.demo0 {
+    border-radius: 4px;
+    background-color: rgb(240, 240, 232);
+    position: relative;
+    margin: 5px 3px 10px;
+    width: 450px;
+    height: 50px;
+  }
+.demo0-block {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: rgb(130, 181, 198);
+  }
+
+ .deck {
+   width: 1200px;
+   height: 490px;
+ }
+ .deck-item {
+   position: absolute;
+   width: 200px;
+   height: 90px;
+   overflow: visible;
+   pointer-events: auto;
+   transform-origin: 50% 50% 0px;
+   border-radius: 4px;
+   color: rgb(255, 255, 255);
+   line-height: 96px;
+   padding-left: 32px;
+   font-size: 32px;
+   font-weight: 400;
+   background-color: rgb(31, 200, 219);
+   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   border-style: solid;
+   cursor: pointer;
+ }
+ .link {
+   position: absolute;
+   color: rgb(76, 76, 76);
+   text-decoration: none;
+   font: 14px/1em "Helvetica";
+   padding: 10px;
+   top: 0;
+   left: 0;
+ }
+
+
+.data-table-container input{
+  top: 20px;
+  position: relative;
+}
+
+.data-table-container input ~ div {
+  position:relative;
+  top:40px;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
+
+div.board,
+div#react-container {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div.board {
+  background-color: 'brown';
+  width: 100%;
+  background: #eab92d;
+}
+
+div.note {
+  height: 150px;
+  width: 150px;
+  background-color: yellow;
+  margin: 2px 0;
+  position: absolute;
+  cursor: -webkit-grab;
+  box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .2);
+  overflow: hidden;
+}
+
+div.note:active {
+  cursor: -webkit-grabbing;
+}
+
+div.note p {
+  margin: 0;
+  font-size: 22px;
+  padding: 5px;
+  font-family: "Shadows Into Light", Arial;
+}
+
+div.note:hover > span {
+  opacity: 1;
+}
+
+div.note > span {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  opacity: 0;
+  transition: opacity .25s linear;
+}
+
+div.note button {
+  margin: 2px;
+}
+
+div.note > textarea {
+  height: 75%;
+  background: rgba(255, 255, 255, .5);
+}
+
+.board > button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5em;
+}
+
+/* booking app styles */
+.jumbotron p {
+  font-size: 16px !important;
+}
+.inner-addon {
+    position: relative;
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+.left-addon .react-datepicker__input-container { position: initial; }
+.right-addon .react-datepicker__input-container { position: initial; }
+
+div[class^='col-'], div[class*=' col-']{
+  margin-bottom: 15px;
+}
+
+/* react auto suggest  */
+.react-autosuggest__container--open .react-autosuggest__suggestions-container {
+  display: block;
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  z-index: 2;
+}
+
+.react-autosuggest__suggestion {
+  cursor: pointer;
+}
+
+.react-autosuggest__suggestion--focused {
+  background-color: #286090;
+  color: white;
+}
+
+.react-autosuggest__suggestions-list {
+  list-style-type: none;
+  padding-left: 30px;
+}
+
+/* maps */
+.map-container > div {
+    position: static !important;
+}
