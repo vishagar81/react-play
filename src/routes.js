@@ -12,6 +12,7 @@ import GoogleMapContainer from './components/maps/GoogleMapContainer';
 import Timeline from './components/timeline/TimelinePage';
 
 export default (
+
   <Route path="/" component={App}>
     <IndexRoute component={HomePage} />
     <Route path="playground" component={PlaygroundPage} />
@@ -23,4 +24,5 @@ export default (
     <Route path="maps" component={GoogleMapContainer} />
     <Route path="timeline" component={Timeline} />
   </Route>
+
 );
