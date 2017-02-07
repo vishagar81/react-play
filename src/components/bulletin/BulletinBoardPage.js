@@ -17,7 +17,7 @@ class BulletinBoardPage extends React.Component {
 
 			componentWillMount(){
 				if(this.props.count){
-					const url = `http://baconipsum.com/api/?type=all-meat&sentences=${this.props.count}`
+					const url = `https://baconipsum.com/api/?type=all-meat&sentences=${this.props.count}`
 					fetch(url)
 						.then(results => results.json())
 						.then(array => array[0])
