@@ -26,7 +26,8 @@ class ReorderedListPage extends React.Component{
       mouse: 0,
       isPressed: false,
       lastPressed: 0,
-      order: range(itemsCount)
+      order: range(itemsCount),
+      _isMounted: false
     };
 
     // Bind this to the functions
@@ -39,15 +40,24 @@ class ReorderedListPage extends React.Component{
     window.addEventListener('touchend', this.handleMouseUp);
     window.addEventListener('mousemove', this.handleMouseMove);
     window.addEventListener('mouseup', this.handleMouseUp);
+    this.setState({_isMounted: true});
+  }
+
+  componentWillUnmount(){
+    //mutating the state directly as setState is not working !!!
+    this.state._isMounted = false;
   }
 
   handleMouseDown(pos, pressY, {pageY}) {
-    this.setState({
-      delta: pageY - pressY,
-      mouse: pressY,
-      isPressed: true,
-      lastPressed: pos
-    });
+    const {_isMounted} = this.state;
+    if(_isMounted){
+      this.setState({
+        delta: pageY - pressY,
+        mouse: pressY,
+        isPressed: true,
+        lastPressed: pos
+      });
+    }
   }
 
   handleMouseMove({pageY}) {
@@ -64,10 +74,14 @@ class ReorderedListPage extends React.Component{
   }
 
   handleMouseUp() {
-    this.setState({
-      isPressed: false,
-      delta: 0
-    });
+    const {_isMounted} = this.state;
+
+    if(_isMounted){
+      this.setState({
+        isPressed: false,
+        delta: 0
+      });
+    }
   }
 
   render(){

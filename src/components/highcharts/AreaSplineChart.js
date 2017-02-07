@@ -72,7 +72,7 @@ class AreaSplineChart extends React.Component {
     }
 
     componentWillReceiveProps(props) {
-    	this.chart.highcharts().series[0].setData(props.data);
+    	this.chart.series[0].setData(props.data);
     }
 
     render() {

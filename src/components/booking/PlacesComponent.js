@@ -65,7 +65,7 @@ class PlaceComponent extends React.Component {
      var myInit = {mode: 'cors',
                   headers: myHeaders}
 
-     fetch("https://airport.api.aero/airport?user_key=b08950b7c744aa0ee76d96ea132058fe", myInit)
+     fetch("https://airport.api.aero/airport/?user_key=b08950b7c744aa0ee76d96ea132058fe", myInit)
         .then(results => results.json())
         .then(parsedResults => this.setState({ukAirports: parsedResults.airports}))
         .catch(function(error){
