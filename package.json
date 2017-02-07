@@ -12,6 +12,7 @@
     "faker": "^3.1.0",
     "fixed-data-table": "^0.6.3",
     "google-maps-react": "^1.0.19",
+    "highcharts": "^5.0.7",
     "jquery": "2.2.3",
     "lodash.range": "^3.2.0",
     "moment": "^2.15.2",
@@ -34,6 +35,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy" : "npm run build&&gh-pages -d build"
+    "deploy": "npm run build&&gh-pages -d build"
   }
 }

@@ -3,10 +3,10 @@ import {GoogleApiWrapper} from 'google-maps-react';
 import Map from './MapComponent';
 
 class GoogleMapContainer extends React.Component {
-  
+
   render(){
     if (!this.props.loaded) {
-      return (<div class="test">Loading...</div>);
+      return (<div className="test">Loading...</div>);
     }
 
     const style = {

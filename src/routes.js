@@ -9,7 +9,7 @@ import SampleDataTablePage from './components/sampledatatable/SampleDataTablePag
 import BulletinBoardPageWrapper from './components/bulletin/BulletinBoardPageWrapper';
 import BookingWrapper from './components/booking/BookingWrapper';
 import GoogleMapContainer from './components/maps/GoogleMapContainer';
-import Timeline from './components/timeline/TimelinePage';
+import HighChartsPageWrapper from './components/highcharts/HighChartsPageWrapper';
 
 export default (
 
@@ -22,7 +22,7 @@ export default (
     <Route path="bulletin" component={BulletinBoardPageWrapper} />
     <Route path="booking" component={BookingWrapper} />
     <Route path="maps" component={GoogleMapContainer} />
-    <Route path="timeline" component={Timeline} />
+    <Route path="highcharts" component={HighChartsPageWrapper} />
   </Route>
 
 );

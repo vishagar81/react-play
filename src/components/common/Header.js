@@ -12,7 +12,7 @@ const Header = () => {
          <li><Link to="/playground">React Playground</Link></li>
          <li><Link to="/booking">Flight Booking</Link></li>
          <li><Link to="/maps">Google Maps</Link></li>
-         <li><Link to="/timeline">Timeline</Link></li>
+         <li><Link to="/highcharts">Highcharts</Link></li>
     </ul>
   );
 };
