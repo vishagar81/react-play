@@ -14,7 +14,7 @@ import HighChartsPageWrapper from './components/highcharts/HighChartsPageWrapper
 export default (
 
   <Route path="/" component={App}>
-    <IndexRoute component={HomePage} />
+    <IndexRoute path="booking" component={BookingWrapper} />
     <Route path="playground" component={PlaygroundPage} />
     <Route path="courses" component={CoursesPage} />
     <Route path="list" component={ReorderedListPage} />
