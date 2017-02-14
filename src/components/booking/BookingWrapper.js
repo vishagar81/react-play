@@ -2,6 +2,7 @@ import React from 'react';
 import DateComponent from './DateComponent';
 import DropdownComponent from './DropdownComponent';
 import PlaceComponent from './PlacesComponent';
+import '..//..//styles/booking.css';
 
 class BookingWrapper extends React.Component {
   constructor(props){
@@ -41,8 +42,13 @@ class BookingWrapper extends React.Component {
     var returnButtonStyle = this.state.return ? "btn btn-primary" : "btn btn-default";
     var oneWayButtonStyle = this.state.oneWay ? "btn btn-primary" : "btn btn-default";
     var multipleButtonStyle = this.state.multiple ? "btn btn-primary" : "btn btn-default";
+
+    var videoSource = require('../../../ext/City_of_Lakes_Udaipur_4K.mp4');
     return(
       <div className="jumbotron">
+        <video id="video-background" preload muted autoPlay loop>
+          <source src={videoSource} type="video/mp4" />
+        </video>
         <div className="row">
             <div className="col-md-6">
                <div className="btn-group btn-group-md" role="group" aria-label="...">
