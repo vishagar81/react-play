@@ -42,12 +42,11 @@ class BookingWrapper extends React.Component {
     var returnButtonStyle = this.state.return ? "btn btn-primary" : "btn btn-default";
     var oneWayButtonStyle = this.state.oneWay ? "btn btn-primary" : "btn btn-default";
     var multipleButtonStyle = this.state.multiple ? "btn btn-primary" : "btn btn-default";
-
-    var videoSource = require('../../../ext/City_of_Lakes_Udaipur_4K.mp4');
+    
     return(
       <div className="jumbotron">
         <video id="video-background" preload muted autoPlay loop>
-          <source src={videoSource} type="video/mp4" />
+          <source src="http://res.cloudinary.com/vishagar/video/upload/v1487093068/City_of_Lakes_Udaipur_4K_small_mrgcz1.mp4" type="video/mp4" />
         </video>
         <div className="row">
             <div className="col-md-6">
