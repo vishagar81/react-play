@@ -44,7 +44,7 @@ class BookingWrapper extends React.Component {
     var multipleButtonStyle = this.state.multiple ? "btn btn-primary" : "btn btn-default";
     
     return(
-      <div className="jumbotron">
+      <div className="jumbotron jumbotron-booking">
         <video id="video-background" preload muted autoPlay loop>
           <source src="http://res.cloudinary.com/vishagar/video/upload/v1487093068/City_of_Lakes_Udaipur_4K_small_mrgcz1.mp4" type="video/mp4" />
         </video>

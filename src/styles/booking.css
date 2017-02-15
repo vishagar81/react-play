@@ -1,9 +1,9 @@
-.jumbotron{
+.jumbotron-booking{
   position: relative;
   background-color: transparent !important;
 }
 
-.jumbotron p {
+.jumbotron-booking p {
   color: white;
 }
 
