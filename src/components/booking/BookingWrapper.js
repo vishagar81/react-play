@@ -46,7 +46,7 @@ class BookingWrapper extends React.Component {
     return(
       <div className="jumbotron jumbotron-booking">
         <video id="video-background" preload muted autoPlay loop>
-          <source src="http://res.cloudinary.com/vishagar/video/upload/v1487093068/City_of_Lakes_Udaipur_4K_small_mrgcz1.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/vishagar/video/upload/v1487093068/City_of_Lakes_Udaipur_4K_small_mrgcz1.mp4" type="video/mp4" />
         </video>
         <div className="row">
             <div className="col-md-6">

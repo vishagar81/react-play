@@ -13,6 +13,7 @@ const Header = () => {
          <li><Link to="/booking">Flight Booking</Link></li>
          <li><Link to="/maps">Google Maps</Link></li>
          <li><Link to="/highcharts">Highcharts</Link></li>
+         <li><Link to="/reactdatagrid">React Data Grid</Link></li>
     </ul>
   );
 };
