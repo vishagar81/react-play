@@ -10,7 +10,7 @@ import BulletinBoardPageWrapper from './components/bulletin/BulletinBoardPageWra
 import BookingWrapper from './components/booking/BookingWrapper';
 import GoogleMapContainer from './components/maps/GoogleMapContainer';
 import HighChartsPageWrapper from './components/highcharts/HighChartsPageWrapper';
-import ReactDataGridPage from './components/reactdatagrid/ReactDataGridPage';
+import ReactDataGridPageWrapper from './components/reactdatagrid/ReactDataGridPageWrapper';
 
 export default (
 
@@ -24,7 +24,7 @@ export default (
     <Route path="booking" component={BookingWrapper} />
     <Route path="maps" component={GoogleMapContainer} />
     <Route path="highcharts" component={HighChartsPageWrapper} />
-    <Route path="reactdatagrid" component={ReactDataGridPage} />
+    <Route path="reactdatagrid" component={ReactDataGridPageWrapper} />
   </Route>
 
 );

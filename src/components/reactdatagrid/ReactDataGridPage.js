@@ -15,8 +15,10 @@ class ReactDataGridPage extends React.Component {
           { key: 'startDate', name: 'Start Date' },
           { key: 'completeDate', name: 'Expected Complete' }
          ],
-         rows:[]
+         rows:[],
+         rowsCount: props.numOfRows
       };
+      
       this.rowGetter = this.rowGetter.bind(this);
       this.createRows = this.createRows.bind(this);
     }
@@ -25,9 +27,18 @@ class ReactDataGridPage extends React.Component {
       this.createRows();
     }
 
+
+    componentWillReceiveProps(nextProps){
+      this.setState({rowsCount: nextProps.numOfRows}, function(){
+        this.createRows();
+      });
+    }
+
     createRows(){
+      let upperLimit = this.state.rowsCount * 1.0;
       let rows = [];
-      for ( let i = 1; i < 500000; i++ ){
+      console.log(upperLimit);
+      for ( let i = 1; i <= upperLimit; i++ ){
         rows.push({
           id: i,
           task: 'Task ' + i,
@@ -53,7 +64,7 @@ class ReactDataGridPage extends React.Component {
 
     render(){
       var {rows, columns} = this.state;
-
+      
       return(
            <ReactDataGrid
               columns={columns}
