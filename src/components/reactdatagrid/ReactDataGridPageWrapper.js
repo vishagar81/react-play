@@ -1,5 +1,4 @@
 import React from 'react';
-import Loader from 'react-loader-advanced';
 import ReactDataGridPage from './ReactDataGridPage';
 import NumRowsComponent from './NumRowsComponent';
 

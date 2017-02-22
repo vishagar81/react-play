@@ -29,7 +29,8 @@ class NumRowsComponent extends React.Component {
 				<input 	type="number" min="10" max="500000" 
 						className="form-control"
 						style={{marginTop:15, marginBottom:15}}
-						onChange={this.numOfRowsChanged}>
+						onChange={this.numOfRowsChanged}
+						placeholder="Enter the number of rows to load">
 				</input>
 				<input 	type="button" 
 						value="Update" 
