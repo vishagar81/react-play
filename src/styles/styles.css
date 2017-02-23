@@ -1,19 +1,13 @@
-#app {
-  font:14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #4d4d4d;
-  min-width: 550px;
-  min-height: 850px;
-  margin: 0 auto;
-  width: 100vw;
-	height: 100vh;
+body {
+  font-size: 13px;
+}
+
+.container {
+  margin-left: 0;
 }
 
 a.active {
   color: orange;
-}
-
-a {
-  background-color: #ff5a5f;
 }
 
 nav {
@@ -235,3 +229,4 @@ div[class^='col-'], div[class*=' col-']{
 .map-container > div {
     position: static !important;
 }
+

@@ -22,7 +22,6 @@ export default (
     <Route path="table" component={SampleDataTablePage} />
     <Route path="bulletin" component={BulletinBoardPageWrapper} />
     <Route path="booking" component={BookingWrapper} />
-    // <Route path="maps" component={GoogleMapContainer} />
     <Route path="highcharts" component={HighChartsPageWrapper} />
     <Route path="reactdatagrid" component={ReactDataGridPageWrapper} />
   </Route>
