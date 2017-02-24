@@ -1,5 +1,5 @@
-body {
-  background-color: #38569f !important;
+body, .container {
+  background-color: #292929 !important;
 }
 
 /******* override bootstrap styles *******/
@@ -17,14 +17,24 @@ body {
 
 .child-button {
 	color: #65d269;
-    background-color: transparent;
-    border: 1px solid #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
 }
 
 .child-button:hover {
 	border: 2px solid #fff;	
 	cursor: pointer;
 }
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+  color: #65d269;
+}
+
+
 
 /******* end - override bootstrap styles *******/
 
@@ -42,7 +52,7 @@ body {
     color: #65d269 !important;
   }
   #fh5co-header #navbar li a {
-    color: rgba(255, 255, 255, 0.5) !important;
+    color: rgb(255, 255, 255) !important;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
@@ -168,3 +178,126 @@ body {
   -ms-border-radius: 0px;
   border-radius: 0px;
 }
+
+@media screen and (max-width: 768px) {
+  #fh5co-header .navbar-default {
+    margin-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+#fh5co-header .navbar-default .brand-slogan {
+  margin: 28px 0 0 15px;
+  float: left;
+  letter-spacing: 2px;
+  color: #adadad;
+}
+#fh5co-header .navbar-default .brand-slogan em {
+  color: #65d269;
+  font-style: normal;
+}
+#fh5co-header a {
+  -webkit-transition: 0s;
+  -o-transition: 0s;
+  transition: 0s;
+}
+
+
+/**** burger menu toggling for responsive design ***/
+.fh5co-nav-toggle {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.fh5co-nav-toggle.active i::before, .fh5co-nav-toggle.active i::after {
+  background: #65d269;
+}
+.fh5co-nav-toggle:hover, .fh5co-nav-toggle:focus, .fh5co-nav-toggle:active {
+  outline: none;
+  border-bottom: none !important;
+}
+.fh5co-nav-toggle i {
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  width: 25px;
+  height: 3px;
+  color: #65d269;
+  font: bold 14px/.4 Helvetica;
+  text-transform: uppercase;
+  text-indent: -55px;
+  background: #65d269;
+  transition: all .2s ease-out;
+}
+.fh5co-nav-toggle i::before, .fh5co-nav-toggle i::after {
+  content: '';
+  width: 25px;
+  height: 3px;
+  background: #65d269;
+  position: absolute;
+  left: 0;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.fh5co-nav-toggle i::before {
+  top: -7px;
+}
+
+.fh5co-nav-toggle i::after {
+  bottom: -7px;
+}
+
+.fh5co-nav-toggle:hover i::before {
+  top: -10px;
+}
+
+.fh5co-nav-toggle:hover i::after {
+  bottom: -10px;
+}
+
+.fh5co-nav-toggle.active i {
+  background: transparent;
+}
+
+.fh5co-nav-toggle.active i::before {
+  top: 0;
+  -webkit-transform: rotateZ(45deg);
+  -moz-transform: rotateZ(45deg);
+  -ms-transform: rotateZ(45deg);
+  -o-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+}
+
+.fh5co-nav-toggle.active i::after {
+  bottom: 0;
+  -webkit-transform: rotateZ(-45deg);
+  -moz-transform: rotateZ(-45deg);
+  -ms-transform: rotateZ(-45deg);
+  -o-transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg);
+}
+
+.fh5co-nav-toggle {
+  position: absolute;
+  top: 12px;
+  right: 0px;
+  z-index: 21;
+  padding: 6px 0 0 0;
+  display: block;
+  margin: 0 auto;
+  display: none;
+  height: 44px;
+  width: 44px;
+  border-bottom: none !important;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-nav-toggle {
+    display: block;
+  }
+}
+/**** end: burger menu toggling for responsive design ***/
