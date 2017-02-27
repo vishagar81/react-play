@@ -48,3 +48,81 @@
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
+
+.avatar {
+  float: left;
+  margin-right: 14px;
+  margin-bottom: 4px;
+}
+
+.avatar.social {
+  width: initial;
+}
+
+.skills__list {
+    display: none;
+}
+
+@media only screen and (min-width: 768px){
+  .skills__list li {
+    font-size: 1.25rem;
+  }
+}
+
+
+@media only screen and (min-width: 512px)
+{
+  .skills__list {
+    display: block;
+    margin-bottom: .5rem;
+    font-size: 0;
+    padding-left: 0;
+  }
+
+  .skills__list li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: .5em;
+    font-size: 1.725rem;
+  }
+
+  .skills__list li:before{
+    content: '\00B7';
+    display: inline-block;
+    margin-right: .5em;
+  }
+
+  .skills__list li:first-child {
+    margin-left: 0;
+  }
+}
+
+
+.logos {
+    margin-bottom: 25px;
+    float: left;
+    width: 100%;
+}
+
+
+.logos .logo {
+  margin-right: 1em;
+  float: left;
+}
+
+.btn-download:after {
+  content: "\2193";
+  margin: 10px;
+}
+
+
+/**** bootstrap overrides *****/
+.jumbotron-override {
+    box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 10px;
+    text-align: center;
+}
+/**** end: bootstrap overrides *****/

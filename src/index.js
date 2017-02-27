@@ -6,6 +6,7 @@ import routes from './routes';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/fixed-data-table/dist/fixed-data-table.min.css';
 import '..//node_modules/react-datepicker/dist/react-datepicker.css';
+import './styles/auto-suggest.css';
 import './styles/styles.css';
 import './styles/base-theme.css';
 

@@ -8,7 +8,7 @@ const Header = () => {
         <nav className="navbar navbar-default">
             <div className="navbar-header">
                 <a href="#" className="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-                <a className="navbar-brand" href="index.html">React Play</a> 
+                <a className="navbar-brand" href="index.html">Kansys</a> 
             </div>
             <div id="navbar" className="navbar-collapse collapse">
                 <ul className="nav navbar-nav navbar-right">
