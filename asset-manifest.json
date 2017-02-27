@@ -1,11 +1,16 @@
 {
-  "main.css": "static/css/main.491139cf.css",
-  "main.css.map": "static/css/main.491139cf.css.map",
-  "main.js": "static/js/main.45e10391.js",
-  "main.js.map": "static/js/main.45e10391.js.map",
+  "main.css": "static/css/main.297d2df8.css",
+  "main.css.map": "static/css/main.297d2df8.css.map",
+  "main.js": "static/js/main.d72c1aaf.js",
+  "main.js.map": "static/js/main.d72c1aaf.js.map",
   "static\\media\\glyphicons-halflings-regular.eot": "static/media/glyphicons-halflings-regular.f4769f9b.eot",
   "static\\media\\glyphicons-halflings-regular.svg": "static/media/glyphicons-halflings-regular.89889688.svg",
   "static\\media\\glyphicons-halflings-regular.ttf": "static/media/glyphicons-halflings-regular.e18bbf61.ttf",
   "static\\media\\glyphicons-halflings-regular.woff": "static/media/glyphicons-halflings-regular.fa277232.woff",
-  "static\\media\\glyphicons-halflings-regular.woff2": "static/media/glyphicons-halflings-regular.448c34a5.woff2"
+  "static\\media\\glyphicons-halflings-regular.woff2": "static/media/glyphicons-halflings-regular.448c34a5.woff2",
+  "static\\media\\profile.png": "static/media/profile.9f605d91.png",
+  "static\\media\\svgporn-css3.png": "static/media/svgporn-css3.3086cb0d.png",
+  "static\\media\\svgporn-html5.png": "static/media/svgporn-html5.75127e60.png",
+  "static\\media\\svgporn-javascript.png": "static/media/svgporn-javascript.f8a53418.png",
+  "static\\media\\svgporn-react.png": "static/media/svgporn-react.cbd9c7f5.png"
 }
