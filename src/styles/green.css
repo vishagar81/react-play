@@ -80,7 +80,7 @@ body, .container {
   margin-bottom: 0;
 }
 #fh5co-header #navbar li a {
-  font-family: "Roboto+Slab", Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   position: relative;
 }
 #fh5co-header #navbar li a span {
@@ -136,7 +136,7 @@ body, .container {
   font-size: 29px;
   font-weight: 700;
   padding-left: 0;
-  color: #01c3a7;
+  color: #65d269;
 }
 #fh5co-header.navbar-fixed-top {
   position: fixed !important;

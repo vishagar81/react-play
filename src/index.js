@@ -11,7 +11,7 @@ import './styles/styles.css';
 import './styles/base-theme.css';
 
 // style overrides
-import './styles/theme1.css';
+import './styles/green.css';
 
 render(
   <Router history={hashHistory} routes={routes} />,
